@@ -1,0 +1,647 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="@color/background">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/enter_perfect_life_goals"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="@color/text_primary"
+            android:paddingBottom="16dp" />
+
+        <!-- Luxury Condo -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/luxury_condo"
+            android:textSize="16sp"
+            android:textColor="@color/text_primary" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <Spinner
+                android:id="@+id/spinner_luxury_condo"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginBottom="16dp"
+                android:minHeight="48dp"
+                android:padding="8dp" />
+            <EditText
+                android:id="@+id/edit_text_luxury_condo_cost"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="@string/luxury_condo_hint"
+                android:inputType="numberDecimal"
+                android:layout_marginBottom="16dp"
+                android:minHeight="48dp"
+                android:padding="8dp"
+                android:autofillHints="estimateCost" />
+        </LinearLayout>
+
+        <!-- Sports Cars -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/sports_cars"
+            android:textSize="16sp"
+            android:textColor="@color/text_primary" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <Spinner
+                android:id="@+id/spinner_sports_cars"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginBottom="16dp"
+                android:minHeight="48dp"
+                android:padding="8dp" />
+            <EditText
+                android:id="@+id/edit_text_sports_cars_cost"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="@string/sports_cars_hint"
+                android:inputType="numberDecimal"
+                android:layout_marginBottom="16dp"
+                android:minHeight="48dp"
+                android:padding="8dp"
+                android:autofillHints="estimateCost" />
+        </LinearLayout>
+
+        <!-- Vacation -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/vacation"
+            android:textSize="16sp"
+            android:textColor="@color/text_primary" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <Spinner
+                android:id="@+id/spinner_vacation"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginBottom="16dp"
+                android:minHeight="48dp"
+                android:padding="8dp" />
+            <EditText
+                android:id="@+id/edit_text_vacation_cost"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="@string/vacation_hint"
+                android:inputType="numberDecimal"
+                android:layout_marginBottom="16dp"
+                android:minHeight="48dp"
+                android:padding="8dp"
+                android:autofillHints="estimateCost" />
+        </LinearLayout>
+
+        <!-- Fancy Meals -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/fancy_meals"
+            android:textSize="16sp"
+            android:textColor="@color/text_primary" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <Spinner
+                android:id="@+id/spinner_fancy_meals"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginBottom="16dp"
+                android:minHeight="48dp"
+                android:padding="8dp" />
+            <EditText
+                android:id="@+id/edit_text_fancy_meals_cost"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="@string/fancy_meals_hint"
+                android:inputType="numberDecimal"
+                android:layout_marginBottom="16dp"
+                android:minHeight="48dp"
+                android:padding="8dp"
+                android:autofillHints="estimateCost" />
+        </LinearLayout>
+
+        <!-- Dance Lessons -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/dance_lessons"
+            android:textSize="16sp"
+            android:textColor="@color/text_primary" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <Spinner
+                android:id="@+id/spinner_dance_lessons"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginBottom="16dp"
+                android:minHeight="48dp"
+                android:padding="8dp" />
+            <EditText
+                android:id="@+id/edit_text_dance_lessons_cost"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="@string/dance_lessons_hint"
+                android:inputType="numberDecimal"
+                android:layout_marginBottom="16dp"
+                android:minHeight="48dp"
+                android:padding="8dp"
+                android:autofillHints="estimateCost" />
+        </LinearLayout>
+
+        <!-- Name Brand Clothes -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/name_brand_clothes"
+            android:textSize="16sp"
+            android:textColor="@color/text_primary" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <Spinner
+                android:id="@+id/spinner_name_brand_clothes"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginBottom="16dp"
+                android:minHeight="48dp"
+                android:padding="8dp" />
+            <EditText
+                android:id="@+id/edit_text_name_brand_clothes_cost"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="@string/name_brand_clothes_hint"
+                android:inputType="numberDecimal"
+                android:layout_marginBottom="16dp"
+                android:minHeight="48dp"
+                android:padding="8dp"
+                android:autofillHints="estimateCost" />
+        </LinearLayout>
+
+        <!-- Home Theater -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/home_theater"
+            android:textSize="16sp"
+            android:textColor="@color/text_primary" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <Spinner
+                android:id="@+id/spinner_home_theater"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginBottom="16dp"
+                android:minHeight="48dp"
+                android:padding="8dp" />
+            <EditText
+                android:id="@+id/edit_text_home_theater_cost"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="@string/home_theater_hint"
+                android:inputType="numberDecimal"
+                android:layout_marginBottom="16dp"
+                android:minHeight="48dp"
+                android:padding="8dp"
+                android:autofillHints="estimateCost" />
+        </LinearLayout>
+
+        <!-- Maid Service -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/maid_service"
+            android:textSize="16sp"
+            android:textColor="@color/text_primary" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <Spinner
+                android:id="@+id/spinner_maid_service"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginBottom="16dp"
+                android:minHeight="48dp"
+                android:padding="8dp" />
+            <EditText
+                android:id="@+id/edit_text_maid_service_cost"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="@string/maid_service_hint"
+                android:inputType="numberDecimal"
+                android:layout_marginBottom="16dp"
+                android:minHeight="48dp"
+                android:padding="8dp"
+                android:autofillHints="estimateCost" />
+        </LinearLayout>
+
+        <!-- Lavish Christmas -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/lavish_christmas"
+            android:textSize="16sp"
+            android:textColor="@color/text_primary" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <Spinner
+                android:id="@+id/spinner_lavish_christmas"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginBottom="16dp"
+                android:minHeight="48dp"
+                android:padding="8dp" />
+            <EditText
+                android:id="@+id/edit_text_lavish_christmas_cost"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="@string/lavish_christmas_hint"
+                android:inputType="numberDecimal"
+                android:layout_marginBottom="16dp"
+                android:minHeight="48dp"
+                android:padding="8dp"
+                android:autofillHints="estimateCost" />
+        </LinearLayout>
+
+        <!-- Lavish Birthday -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/lavish_birthday"
+            android:textSize="16sp"
+            android:textColor="@color/text_primary" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <Spinner
+                android:id="@+id/spinner_lavish_birthday"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginBottom="16dp"
+                android:minHeight="48dp"
+                android:padding="8dp" />
+            <EditText
+                android:id="@+id/edit_text_lavish_birthday_cost"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="@string/lavish_birthday_hint"
+                android:inputType="numberDecimal"
+                android:layout_marginBottom="16dp"
+                android:minHeight="48dp"
+                android:padding="8dp"
+                android:autofillHints="estimateCost" />
+        </LinearLayout>
+
+        <!-- Personal Chef -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/personal_chef"
+            android:textSize="16sp"
+            android:textColor="@color/text_primary" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <Spinner
+                android:id="@+id/spinner_personal_chef"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginBottom="16dp"
+                android:minHeight="48dp"
+                android:padding="8dp" />
+            <EditText
+                android:id="@+id/edit_text_personal_chef_cost"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="@string/personal_chef_hint"
+                android:inputType="numberDecimal"
+                android:layout_marginBottom="16dp"
+                android:minHeight="48dp"
+                android:padding="8dp"
+                android:autofillHints="estimateCost" />
+        </LinearLayout>
+
+        <!-- Personal Trainer -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/personal_trainer"
+            android:textSize="16sp"
+            android:textColor="@color/text_primary" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <Spinner
+                android:id="@+id/spinner_personal_trainer"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginBottom="16dp"
+                android:minHeight="48dp"
+                android:padding="8dp" />
+            <EditText
+                android:id="@+id/edit_text_personal_trainer_cost"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="@string/personal_trainer_hint"
+                android:inputType="numberDecimal"
+                android:layout_marginBottom="16dp"
+                android:minHeight="48dp"
+                android:padding="8dp"
+                android:autofillHints="estimateCost" />
+        </LinearLayout>
+
+        <!-- Concert Tickets -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/concert_tickets"
+            android:textSize="16sp"
+            android:textColor="@color/text_primary" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <Spinner
+                android:id="@+id/spinner_concert_tickets"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginBottom="16dp"
+                android:minHeight="48dp"
+                android:padding="8dp" />
+            <EditText
+                android:id="@+id/edit_text_concert_tickets_cost"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="@string/concert_tickets_hint"
+                android:inputType="numberDecimal"
+                android:layout_marginBottom="16dp"
+                android:minHeight="48dp"
+                android:padding="8dp"
+                android:autofillHints="estimateCost" />
+        </LinearLayout>
+
+        <!-- Charity -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/charity"
+            android:textSize="16sp"
+            android:textColor="@color/text_primary" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <Spinner
+                android:id="@+id/spinner_charity"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginBottom="16dp"
+                android:minHeight="48dp"
+                android:padding="8dp" />
+            <EditText
+                android:id="@+id/edit_text_charity_cost"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="@string/charity_hint"
+                android:inputType="numberDecimal"
+                android:layout_marginBottom="16dp"
+                android:minHeight="48dp"
+                android:padding="8dp"
+                android:autofillHints="estimateCost" />
+        </LinearLayout>
+
+        <!-- Spa Treatments -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/spa_treatments"
+            android:textSize="16sp"
+            android:textColor="@color/text_primary" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <Spinner
+                android:id="@+id/spinner_spa_treatments"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginBottom="16dp"
+                android:minHeight="48dp"
+                android:padding="8dp" />
+            <EditText
+                android:id="@+id/edit_text_spa_treatments_cost"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="@string/spa_treatments_hint"
+                android:inputType="numberDecimal"
+                android:layout_marginBottom="16dp"
+                android:minHeight="48dp"
+                android:padding="8dp"
+                android:autofillHints="estimateCost" />
+        </LinearLayout>
+
+        <!-- Flight Lesson -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/flight_lesson"
+            android:textSize="16sp"
+            android:textColor="@color/text_primary" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <Spinner
+                android:id="@+id/spinner_flight_lesson"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginBottom="16dp"
+                android:minHeight="48dp"
+                android:padding="8dp" />
+            <EditText
+                android:id="@+id/edit_text_flight_lesson_cost"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="@string/flight_lesson_hint"
+                android:inputType="numberDecimal"
+                android:layout_marginBottom="16dp"
+                android:minHeight="48dp"
+                android:padding="8dp"
+                android:autofillHints="estimateCost" />
+        </LinearLayout>
+
+        <!-- Limousine Rides -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/limousine_rides"
+            android:textSize="16sp"
+            android:textColor="@color/text_primary" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <Spinner
+                android:id="@+id/spinner_limousine_rides"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginBottom="16dp"
+                android:minHeight="48dp"
+                android:padding="8dp" />
+            <EditText
+                android:id="@+id/edit_text_limousine_rides_cost"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="@string/limousine_rides_hint"
+                android:inputType="numberDecimal"
+                android:layout_marginBottom="16dp"
+                android:minHeight="48dp"
+                android:padding="8dp"
+                android:autofillHints="estimateCost" />
+        </LinearLayout>
+
+        <!-- Random Bills -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/random_bills"
+            android:textSize="16sp"
+            android:textColor="@color/text_primary" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <Spinner
+                android:id="@+id/spinner_random_bills"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginBottom="16dp"
+                android:minHeight="48dp"
+                android:padding="8dp" />
+            <EditText
+                android:id="@+id/edit_text_random_bills_cost"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="@string/random_bills_hint"
+                android:inputType="numberDecimal"
+                android:layout_marginBottom="16dp"
+                android:minHeight="48dp"
+                android:padding="8dp"
+                android:autofillHints="estimateCost" />
+        </LinearLayout>
+
+        <!-- Buy Whatever -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/buy_whatever"
+            android:textSize="16sp"
+            android:textColor="@color/text_primary" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <Spinner
+                android:id="@+id/spinner_buy_whatever"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginBottom="16dp"
+                android:minHeight="48dp"
+                android:padding="8dp" />
+            <EditText
+                android:id="@+id/edit_text_buy_whatever_cost"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="@string/buy_whatever_hint"
+                android:inputType="numberDecimal"
+                android:layout_marginBottom="16dp"
+                android:minHeight="48dp"
+                android:padding="8dp"
+                android:autofillHints="estimateCost" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/button_calculate_perfect_life"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/button_background"
+            android:padding="12dp"
+            android:text="@string/calculate_perfect_life"
+            android:textColor="@color/button_text" />
+
+        <TextView
+            android:id="@+id/text_view_perfect_life_result"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:paddingTop="16dp"
+            android:textColor="@color/text_primary" />
+    </LinearLayout>
+</ScrollView>
