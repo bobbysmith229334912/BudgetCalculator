@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
@@ -23,11 +24,96 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="12dp"
-        android:background="?android:attr/colorAccent"
+        android:backgroundTint="@color/colorAccent"
         android:contentDescription="@string/financial_assessment_description"
-        android:padding="12dp"
+        android:padding="16dp"
         android:text="@string/financial_assessment"
         android:textAllCaps="false"
-        android:textColor="#5E35B1" />
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        android:fontFamily="sans-serif-medium"
+        android:elevation="4dp"
+        android:drawablePadding="8dp"
+        android:drawableStart="@drawable/ic_financial_assessment"
+        android:drawableTint="@color/white" />
+
+    <Button
+        android:id="@+id/profileButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:backgroundTint="@color/colorAccent"
+        android:padding="16dp"
+        android:text="Profile"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        android:fontFamily="sans-serif-medium"
+        android:elevation="4dp" />
+
+    <Button
+        android:id="@+id/button_complete_task"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:backgroundTint="@color/colorAccent"
+        android:padding="16dp"
+        android:text="Complete Task"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        android:fontFamily="sans-serif-medium"
+        android:elevation="4dp" />
+
+    <Button
+        android:id="@+id/button_award_badge"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:backgroundTint="@color/colorAccent"
+        android:padding="16dp"
+        android:text="Award Badge"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        android:fontFamily="sans-serif-medium"
+        android:elevation="4dp" />
+
+    <Button
+        android:id="@+id/button_award_achievement"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:backgroundTint="@color/colorAccent"
+        android:padding="16dp"
+        android:text="Award Achievement"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        android:fontFamily="sans-serif-medium"
+        android:elevation="4dp" />
+
+    <Button
+        android:id="@+id/button_daily_challenge"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:backgroundTint="@color/colorAccent"
+        android:padding="16dp"
+        android:text="Daily Challenge"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        android:fontFamily="sans-serif-medium"
+        android:elevation="4dp" />
+
+    <com.google.android.gms.ads.AdView
+        android:id="@+id/adView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        ads:adSize="BANNER"
+        ads:adUnitId="ca-app-pub-1418052643804135/4134431255"/>
 
 </LinearLayout>

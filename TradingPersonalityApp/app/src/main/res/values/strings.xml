@@ -1,0 +1,111 @@
+<resources>
+    <string name="app_name">TradingPersonalityApp</string>
+    <string name="submit">Submit</string>
+    <string name="savings">Savings: $%.2f</string>
+    <string name="emergency_fund">Emergency Fund</string>
+    <string name="enter_financial_details">Enter Financial Details</string>
+    <string name="enter_amount">Enter amount</string>
+    <string name="savings_input_field">Savings input field</string>
+    <string name="emergency_fund_input_field">Emergency fund input field</string>
+    <string name="buy">Buy</string>
+    <string name="sell">Sell</string>
+    <string name="hold">Hold</string>
+    <string name="scenario">Scenario</string>
+    <string name="time_remaining_10_seconds">Time remaining: 10 seconds</string>
+    <string name="welcome_message">Welcome to the Trading Personality App</string>
+    <string name="financial_assessment">Financial Assessment</string>
+    <string name="financial_assessment_description">Start financial assessment</string>
+    <string name="trading_scenario_description">Start trading scenario</string>
+    <string name="trading_scenario">Trading Scenario</string>
+    <string name="calculate">Calculate</string>
+    <string name="enter_your_monthly_income">Enter your monthly income:</string>
+    <string name="income">Income</string>
+    <string name="invalid_income_input">Invalid Input</string>
+    <string name="please_enter_valid_income">Please enter a valid income amount.</string>
+    <string name="income_required">Income amount is required.</string>
+    <string name="choose_budgeting_system">Choose a Budgeting System</string>
+    <string name="dave_ramsey_system">Dave Ramsey Percentage System</string>
+    <string name="percentage_system">33-33-34 Percentage System</string>
+    <string name="needs">Needs: $%.2f</string>
+    <string name="wants">Wants: $%.2f</string>
+    <string name="living_expenses">Living Expenses: $%.2f</string>
+    <string name="entertainment">Entertainment: $%.2f</string>
+    <string name="result">Result</string>
+    <string name="budget_calculated">Budget calculated successfully!</string>
+    <string name="dave_ramsey_result_format" formatted="false">Dave Ramsey Percentage System:\nNeeds: $%.2f\nWants: $%.2f\nSavings: $%.2f</string>
+    <string name="percentage_result_format" formatted="false">33-33-34 Percentage System:\nSavings: $%.2f\nLiving Expenses: $%.2f\nEntertainment: $%.2f</string>
+    <string name="your_score">Your score is: %d</string>
+    <string name="your_badges">Your badges: %s</string>
+    <string name="your_achievements">Your achievements: %s</string>
+    <string name="profile">Profile</string>
+    <string name="failed_to_load_achievements">Failed to load achievements</string>
+    <string name="achievement_format" formatted="false">%s: %d</string>
+    <string name="complete_assessment">Complete Assessment</string>
+    <string name="first_task_completed_awarded">Achievement awarded: First Task Completed!</string>
+    <string name="failed_to_award_achievement">Failed to award achievement</string>
+    <string name="first_task_completed_already_awarded">Achievement already awarded: First Task Completed</string>
+
+    <!-- New strings for the "My Perfect Life" feature -->
+    <string name="perfect_life">My Perfect Life</string>
+    <string name="enter_perfect_life_goals">Enter your perfect life goals</string>
+    <string name="select_luxury_condo">Select your Luxury Condo</string>
+    <string name="calculate_perfect_life">Calculate Dream Life Cost</string>
+    <string name="perfect_life_result">Perfect Life Cost: $%.2f/year</string>
+
+    <!-- Additional labels for different dream life components -->
+    <string name="luxury_condo">Luxury Condo</string>
+    <string name="mortgage">Mortgage</string>
+    <string name="sports_cars">Lease two sports cars</string>
+    <string name="vacation">Exotic vacation every 90 days</string>
+    <string name="fancy_meals">52 fancy meals at $200 each</string>
+    <string name="dance_lessons">Dance lessons once/week</string>
+    <string name="name_brand_clothes">Name brand clothes</string>
+    <string name="home_theater">Home theater system</string>
+    <string name="maid_service">Maid service</string>
+    <string name="lavish_christmas">Lavish Christmas</string>
+    <string name="lavish_birthday">Lavish birthday</string>
+    <string name="personal_chef">Personal chef for 5 meals/week</string>
+    <string name="personal_trainer">Personal trainer for 3x/week</string>
+    <string name="concert_tickets">2 concert tickets, once concert/month</string>
+    <string name="charity">Charity – Children’s Hospital</string>
+    <string name="spa_treatments">52 spa treatments</string>
+    <string name="flight_lesson">Flight lesson and rental</string>
+    <string name="limousine_rides">Limousine rides</string>
+    <string name="random_bills">Random Bills</string>
+    <string name="buy_whatever">Buy-whatever-I-want-money</string>
+    <string name="first_achievement">First Achievement</string>
+    <string name="first_task_completed">First Task Completed</string>
+
+    <!-- New strings for hints in activity_perfect_life.xml -->
+    <string name="luxury_condo_hint">Enter the cost of your luxury condo</string>
+    <string name="sports_cars_hint">Enter the cost to lease two sports cars</string>
+    <string name="vacation_hint">Enter the cost of an exotic vacation every 90 days</string>
+    <string name="fancy_meals_hint">Enter the cost of 52 fancy meals at $200 each</string>
+    <string name="dance_lessons_hint">Enter the cost of dance lessons once/week</string>
+    <string name="name_brand_clothes_hint">Enter the cost of name brand clothes</string>
+    <string name="home_theater_hint">Enter the cost of a home theater system</string>
+    <string name="maid_service_hint">Enter the cost of maid service</string>
+    <string name="lavish_christmas_hint">Enter the cost of a lavish Christmas</string>
+    <string name="lavish_birthday_hint">Enter the cost of a lavish birthday</string>
+    <string name="personal_chef_hint">Enter the cost of a personal chef for 5 meals/week</string>
+    <string name="personal_trainer_hint">Enter the cost of a personal trainer for 3x/week</string>
+    <string name="concert_tickets_hint">Enter the cost of 2 concert tickets, once concert/month</string>
+    <string name="charity_hint">Enter the cost of charity for Children’s Hospital</string>
+    <string name="spa_treatments_hint">Enter the cost of 52 spa treatments</string>
+    <string name="flight_lesson_hint">Enter the cost of flight lesson and rental</string>
+    <string name="limousine_rides_hint">Enter the cost of limousine rides</string>
+    <string name="random_bills_hint">Enter the cost of random bills</string>
+    <string name="buy_whatever_hint">Enter the cost of buy-whatever-I-want-money</string>
+
+    <!-- New strings for activity_sign_in.xml -->
+    <string name="sign_in">Sign In</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="dont_have_account">Don\'t have an account?</string>
+    <string name="sign_up_here">Sign up here</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="already_have_account">Already have an account?</string>
+    <string name="sign_in_here">Sign in here</string>
+    <string name="achievements">Achievements</string>
+    <string name="ad_unit_id" />
+</resources>

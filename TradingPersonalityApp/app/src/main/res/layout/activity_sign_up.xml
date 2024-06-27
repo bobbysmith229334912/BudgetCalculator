@@ -43,7 +43,6 @@
             android:textColorHint="#757575"
             android:background="@drawable/edit_text_background" />
 
-
         <EditText
             android:id="@+id/edit_text_password"
             android:layout_width="match_parent"
@@ -57,17 +56,19 @@
             android:textColorHint="#757575"
             android:background="@drawable/edit_text_background" />
 
-
         <Button
             android:id="@+id/button_sign_up"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="16dp"
-            android:background="@drawable/button_background"
+            android:backgroundTint="@color/colorAccent"
             android:padding="12dp"
             android:text="@string/sign_up"
             android:textColor="@android:color/white"
             android:textAllCaps="false"
+            android:textSize="16sp"
+            android:fontFamily="sans-serif-medium"
+            android:elevation="4dp"
             android:layout_marginBottom="16dp" />
 
         <TextView
