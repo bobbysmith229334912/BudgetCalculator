@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Welcome to BudgetCalculatorEno!"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:paddingBottom="16dp"
+            android:textColor="#000000"
+            android:gravity="center" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Here's how you can make the most out of BudgetCalculatorEno:"
+            android:textSize="18sp"
+            android:textColor="#333333"
+            android:paddingBottom="8dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="1. Enter your salary in the provided input field."
+            android:textSize="16sp"
+            android:textColor="#555555"
+            android:paddingBottom="4dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="2. Select your pay frequency from the dropdown menu."
+            android:textSize="16sp"
+            android:textColor="#555555"
+            android:paddingBottom="4dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="3. Choose a budget plan that best fits your lifestyle."
+            android:textSize="16sp"
+            android:textColor="#555555"
+            android:paddingBottom="4dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="4. Select your state tax rate from the dropdown menu."
+            android:textSize="16sp"
+            android:textColor="#555555"
+            android:paddingBottom="4dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="5. Click 'Calculate' to see your budget breakdown."
+            android:textSize="16sp"
+            android:textColor="#555555"
+            android:paddingBottom="4dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="6. Add your expenses using the 'Add Expense' button."
+            android:textSize="16sp"
+            android:textColor="#555555"
+            android:paddingBottom="4dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="7. Save your data for future reference with the 'Save Data' button."
+            android:textSize="16sp"
+            android:textColor="#555555"
+            android:paddingBottom="4dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="8. Load your saved data by clicking the 'Load Data' button."
+            android:textSize="16sp"
+            android:textColor="#555555"
+            android:paddingBottom="4dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="9. View a summary of your budget with the 'Show Summary' button."
+            android:textSize="16sp"
+            android:textColor="#555555"
+            android:paddingBottom="4dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="10. If you need any help, click on the 'Explain' button for detailed instructions."
+            android:textSize="16sp"
+            android:textColor="#555555"
+            android:paddingBottom="8dp" />
+
+        <CheckBox
+            android:id="@+id/checkBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="I have read and understood the instructions."
+            android:textSize="16sp"
+            android:textColor="#000000"
+            android:paddingBottom="16dp" />
+
+        <Button
+            android:id="@+id/confirmButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Confirm"
+            android:textSize="16sp"
+            android:textColor="#FFFFFF"
+            android:background="@color/purple_500"
+            android:padding="12dp" />
+    </LinearLayout>
+</ScrollView>

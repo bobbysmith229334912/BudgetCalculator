@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="expensesRecyclerView" type="id" />
+    <item name="deleteButton" type="id" />
+    <item name="explainButton" type="id" />
+    <item name="summaryButton" type="id" />
+    <item name="loadButton" type="id" />
+    <item name="saveButton" type="id" />
+    <item name="addExpenseButton" type="id" />
+    <item name="expenseCategorySpinner" type="id" />
+    <item name="expenseAmountInput" type="id" />
+    <item name="expenseNameInput" type="id" />
+    <item name="resultTextView" type="id" />
+    <item name="calculateButton" type="id" />
+    <item name="stateTaxSpinner" type="id" />
+    <item name="budgetPlanSpinner" type="id" />
+    <item name="payFrequencySpinner" type="id" />
+    <item name="salaryInput" type="id" />
+    <item name="apiKeyInput" type="id" />
+    <item name="apiSecretInput" type="id" />
+    <item name="expensesLabel" type="id" />
+</resources>

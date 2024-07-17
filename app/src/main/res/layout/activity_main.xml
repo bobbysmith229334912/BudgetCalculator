@@ -1,33 +1,207 @@
-
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:orientation="vertical"
-    android:padding="16dp">
+    android:layout_height="match_parent">
 
-    <Button
-        android:id="@+id/streamButton"
+    <!-- Loading overlay -->
+    <FrameLayout
+        android:id="@+id/loadingFrame"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Start Streaming" />
+        android:layout_height="match_parent"
+        android:background="@android:color/white"
+        android:visibility="gone"
+        android:gravity="center">
 
-    <Button
-        android:id="@+id/profileButton"
+        <ProgressBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </FrameLayout>
+
+    <!-- Main content -->
+    <ScrollView
+        android:id="@+id/content"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Profile" />
+        android:layout_height="match_parent"
+        android:padding="16dp">
 
-    <Button
-        android:id="@+id/groupButton"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Groups" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
 
-    <Button
-        android:id="@+id/logoutButton"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Logout" />
+            <!-- Your existing UI elements -->
 
-</LinearLayout>
+            <EditText
+                android:id="@+id/salaryInput"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/enter_your_salary"
+                android:inputType="numberDecimal"
+                android:minHeight="48dp"
+                android:textColorHint="#546E7A"
+                android:autofillHints="salary"
+                tools:ignore="SpeakableTextPresentCheck" />
+
+            <Spinner
+                android:id="@+id/payFrequencySpinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="48dp" />
+
+            <Spinner
+                android:id="@+id/budgetPlanSpinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="48dp" />
+
+            <Spinner
+                android:id="@+id/stateTaxSpinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="48dp" />
+
+            <Button
+                android:id="@+id/calculateButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/calculate"
+                tools:ignore="TouchTargetSizeCheck" />
+
+            <TextView
+                android:id="@+id/resultTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="16dp" />
+
+            <TextView
+                android:id="@+id/currentAccumulationTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Current Accumulation: $0.00000000"
+                android:textColor="#FF0000" />
+
+            <TextView
+                android:id="@+id/minimumOrderSizeTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Minimum Order Size: $0.00000000"
+                android:textColor="#FF0000" />
+
+            <CheckBox
+                android:id="@+id/roundUpCheckBox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/enable_round_up" />
+
+            <Spinner
+                android:id="@+id/cryptoSpinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone" />
+
+            <!-- Your other XML layout components -->
+
+            <Button
+                android:id="@+id/startPlaidLinkButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Link Bank Account"
+                android:layout_gravity="center"
+                android:layout_marginTop="16dp"/>
+
+
+            <EditText
+                android:id="@+id/expenseNameInput"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:autofillHints="expenseName"
+                android:hint="@string/expense_name"
+                android:inputType="textCapWords"
+                android:minHeight="48dp"
+                android:textColorHint="#546E7A"
+                tools:ignore="SpeakableTextPresentCheck" />
+
+            <EditText
+                android:id="@+id/expenseAmountInput"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:autofillHints="expenseAmount"
+                android:hint="@string/expense_amount"
+                android:inputType="numberDecimal"
+                android:minHeight="48dp"
+                android:textColorHint="#546E7A"
+                tools:ignore="SpeakableTextPresentCheck" />
+
+            <Spinner
+                android:id="@+id/expenseCategorySpinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="48dp" />
+
+            <Button
+                android:id="@+id/addExpenseButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/add_expense"
+                tools:ignore="TouchTargetSizeCheck" />
+
+            <Button
+                android:id="@+id/saveButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/save_data"
+                tools:ignore="TouchTargetSizeCheck" />
+
+            <Button
+                android:id="@+id/loadButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/load_data"
+                tools:ignore="TouchTargetSizeCheck" />
+
+            <Button
+                android:id="@+id/summaryButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/show_summary"
+                tools:ignore="TouchTargetSizeCheck" />
+
+            <Button
+                android:id="@+id/explainButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/explain"
+                tools:ignore="TouchTargetSizeCheck" />
+
+            <Button
+                android:id="@+id/settingsButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Settings"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="16dp"
+                android:layout_marginTop="16dp" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/expensesRecyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" />
+
+            <Button
+                android:id="@+id/viewBalanceButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="View Balance" />
+
+            <TextView
+                android:id="@+id/balanceTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="16dp" />
+
+        </LinearLayout>
+    </ScrollView>
+</FrameLayout>
