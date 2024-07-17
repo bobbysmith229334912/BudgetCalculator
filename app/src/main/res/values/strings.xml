@@ -1,0 +1,144 @@
+<resources>
+    <string name="app_name">budgetcalculatoreno</string>
+    <string name="enter_your_salary">Enter your salary</string>
+    <string name="calculate">Calculate</string>
+    <string name="result">Result</string>
+    <string name="add_expense">Add Expense</string>
+    <string name="expense_name">Expense Name</string>
+    <string name="expense_amount">Expense Amount</string>
+    <string name="expenses">Expenses</string>
+    <string name="capture_receipt">Capture Receipt</string>
+    <string name="save">Save</string>
+    <string name="load">Load</string>
+    <string name="view_summary">View Summary</string>
+    <string name="state_tax">State Tax</string>
+    <string name="explanation_text">Welcome to Budget Calculator! 🎉&#10;&#10;Here is a quick guide to get you started:&#10;&#10;1. Enter your salary.&#10;2. Select your pay frequency.&#10;3. Choose a budget plan.&#10;4. Select your state tax rate.&#10;5. Click Calculate to see your budget breakdown.&#10;6. Add your expenses to see the remaining amounts.&#10;&#10;Let us start budgeting and saving smartly! 💰</string>
+    <string name="dismiss_button_text">I have read and understood</string>
+    <string name="explain_button">Explain the App</string>
+
+    <!-- String arrays -->
+    <string-array name="pay_frequencies">
+        <item>Monthly</item>
+        <item>Bi-Weekly</item>
+        <item>Weekly</item>
+    </string-array>
+    <string-array name="budget_plans">
+        <item>Savvy Saver (50/30/20)</item>
+        <item>Big Spender (70/20/10)</item>
+        <item>Balanced Baller (60/20/20)</item>
+        <item>Frugal Fanatic (80/15/5)</item>
+        <item>Cautious Calculator (70/10/20)</item>
+        <item>Quirky Quota (33/33/34)</item>
+    </string-array>
+    <string-array name="expense_categories">
+        <item>Essential</item>
+        <item>Want</item>
+        <item>Saving</item>
+    </string-array>
+    <string-array name="state_taxes">
+        <item>Alabama - 5.0</item>
+        <item>Alaska - 0.0</item>
+        <item>Arizona - 4.0</item>
+        <item>Arkansas - 6.5</item>
+        <item>California - 13.3</item>
+        <item>Colorado - 4.63</item>
+        <item>Connecticut - 6.99</item>
+        <item>Delaware - 6.6</item>
+        <item>Florida - 0.0</item>
+        <item>Georgia - 5.75</item>
+        <item>Hawaii - 11.0</item>
+        <item>Idaho - 6.925</item>
+        <item>Illinois - 4.95</item>
+        <item>Indiana - 3.23</item>
+        <item>Iowa - 8.53</item>
+        <item>Kansas - 5.7</item>
+        <item>Kentucky - 5.0</item>
+        <item>Louisiana - 6.0</item>
+        <item>Maine - 7.15</item>
+        <item>Maryland - 5.75</item>
+        <item>Massachusetts - 5.0</item>
+        <item>Michigan - 4.25</item>
+        <item>Minnesota - 9.85</item>
+        <item>Mississippi - 5.0</item>
+        <item>Missouri - 5.4</item>
+        <item>Montana - 6.75</item>
+        <item>Nebraska - 6.84</item>
+        <item>Nevada - 0.0</item>
+        <item>New Hampshire - 5.0</item>
+        <item>New Jersey - 10.75</item>
+        <item>New Mexico - 5.9</item>
+        <item>New York - 8.82</item>
+        <item>North Carolina - 5.25</item>
+        <item>North Dakota - 2.9</item>
+        <item>Ohio - 4.797</item>
+        <item>Oklahoma - 5.0</item>
+        <item>Oregon - 9.9</item>
+        <item>Pennsylvania - 3.07</item>
+        <item>Rhode Island - 5.99</item>
+        <item>South Carolina - 7.0</item>
+        <item>South Dakota - 0.0</item>
+        <item>Tennessee - 0.0</item>
+        <item>Texas - 0.0</item>
+        <item>Utah - 4.95</item>
+        <item>Vermont - 8.75</item>
+        <item>Virginia - 5.75</item>
+        <item>Washington - 0.0</item>
+        <item>West Virginia - 6.5</item>
+        <item>Wisconsin - 7.65</item>
+        <item>Wyoming - 0.0</item>
+        <item>District of Columbia - 10.75</item>
+    </string-array>
+
+    <!-- Placeholders for BudgetSummaryActivity -->
+    <string name="salary">Salary: $%1$.2f</string>
+    <string name="essentials">Essentials: $%1$.2f</string>
+    <string name="wants">Wants: $%1$.2f</string>
+    <string name="savings">Savings: $%1$.2f</string>
+    <string name="remaining_essential">Remaining Essentials: $%1$.2f</string>
+    <string name="remaining_wants">Remaining Wants: $%1$.2f</string>
+    <string name="remaining_savings">Remaining Savings: $%1$.2f</string>
+    <string name="remaining_after_expenses">Remaining after expenses:</string>
+    <string name="summary_text">%1$s&#10;%2$s&#10;%3$s&#10;%4$s</string>
+    <string name="remaining_text">%1$s&#10;%2$s&#10;%3$s&#10;%4$s</string>
+    <string name="final_result">%1$s&#10;%2$s</string>
+    <string name="no_expenses">No expenses</string>
+
+    <!-- Missing strings for BudgetSummaryActivity -->
+    <string name="pay_frequency">Pay Frequency: %1$s</string>
+    <string name="budget_plan">Budget Plan: %1$s</string>
+    <string name="expenses_label">Expenses:</string>
+    <string name="expense_item">%1$s: $%2$.2f (%3$s)</string>
+
+    <!-- Additional strings for Login and Register Activities -->
+    <string name="login_icon_desc">Login Icon</string>
+    <string name="register_icon_desc">Register Icon</string>
+    <string name="welcome_back">Welcome Back!</string>
+    <string name="create_account">Create an Account</string>
+    <string name="sign_in">Sign In</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="dont_have_account">Do not have an account? Register here</string>
+    <string name="already_have_account">Already have an account? Sign In here</string>
+    <string name="welcome_to_budget_calculatoreno">Welcome to Budget Calculatoreno! 🎉&#10;&#10;Here is a quick guide to get you started:&#10;&#10;1. Enter your salary.&#10;2. Select your pay frequency.&#10;3. Choose a budget plan.&#10;4. Select your state tax rate.&#10;5. Click Calculate to see your budget breakdown.&#10;6. Add your expenses to see the remaining amounts.&#10;&#10;Let us start budgeting and saving smartly! 💰</string>
+    <string name="i_have_read_and_understood">I have read and understood</string>
+    <string name="date">Date</string>
+    <string name="explain_app">Explain App</string>
+    <string name="confirm">Confirm</string>
+    <string name="i_have_read_and_understood_the_instructions">I have read and understood the instructions</string>
+    <string name="here_s_how_you_can_make_the_most_out_of_budgetcalculatoreno">Here is how you can make the most out of EPBudgetCal:&#10;1. Enter your salary.&#10;2. Choose your pay frequency and budget plan.&#10;3. Select your state tax rate.&#10;4. Press Calculate to see your budget breakdown.&#10;5. Add expenses and save your data.&#10;6. Load saved data to review your expenses and budget.&#10;Enjoy managing your finances with ease and efficiency!</string>
+    <string name="welcome_to_budgetcalculatoreno">Welcome to budgetcalculator!</string>
+    <string name="enter_salary">Enter Salary</string>
+    <string name="load_data">Load Data</string>
+    <string name="explain">Explain</string>
+    <string name="save_data">Save Data</string>
+    <string name="show_summary">Show Summary</string>
+    <string name="result_textview">Result</string>
+    <string name="expenses_recyclerview">Expenses List</string>
+    <string name="autofillHintSalary">salary</string>
+    <string name="autofillHintExpenseName">expense name</string>
+    <string name="autofillHintExpenseAmount">expense amount</string>
+    <string name="delete">Delete</string>
+    <string name="expense_date" />
+    <string name="expense_category" />
+    <string name="amount_default">0.00</string>
+    <string name="category" />
+</resources>

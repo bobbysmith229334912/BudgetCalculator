@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "1030838363850",
+    "project_id": "budgetcalculator-139f1",
+    "storage_bucket": "budgetcalculator-139f1.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1030838363850:android:4c0a97bc2cb79669683633",
+        "android_client_info": {
+          "package_name": "com.hardcoreamature.budgetcalculator"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDV1rGyomCihZZAJDN_yB-eSFZlw5ocUjQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1030838363850:android:2d661dee69852e59683633",
+        "android_client_info": {
+          "package_name": "com.hardcoreamature.budgetcalculatoreno"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDV1rGyomCihZZAJDN_yB-eSFZlw5ocUjQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
